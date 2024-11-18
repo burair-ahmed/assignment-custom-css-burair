@@ -1,6 +1,6 @@
 {
-    "name": "nextjs-project",
-    "description": "A placeholder for Composer to satisfy hosting requirements",
+    "name": "fluxpro/seo",
+    "description": "A placeholder Composer file to satisfy Hostinger's deployment requirements",
     "type": "project",
     "require": {}
   }
