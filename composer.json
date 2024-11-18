@@ -1,7 +1,18 @@
 {
     "name": "fluxpro/seo",
-    "description": "A placeholder Composer file to satisfy Hostinger's deployment requirements",
+    "description": "A placeholder Composer file to satisfy Hostinger's deployment requirements for a Next.js project",
     "type": "project",
-    "require": {}
+    "require": {
+      "php": "^8.0",
+      "ext-json": "*"
+    },
+    "require-dev": {},
+    "extra": {
+      "scripts": {
+        "post-install-cmd": [
+          "@php -r \"echo 'This is a placeholder Composer file for a Next.js project.';\""
+        ]
+      }
+    }
   }
   
