@@ -5,24 +5,25 @@ interface TeamMemberProps {
   position: string;
   image: string;
 }
-export default function TeamMember({ name, position, image } : TeamMemberProps) {
+
+export default function TeamMember({ name, position, image }: TeamMemberProps) {
   return (
-    <div className="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 text-center">
+    <div className="team-member">
       <img
         src={image}
         alt={name}
-        className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-indigo-500 shadow-md"
+        className="team-member-image"
       />
-      <h3 className="text-xl font-semibold text-gray-800">{name}</h3>
-      <p className="text-gray-500 mb-4">{position}</p>
-      <div className="flex justify-center space-x-4 text-gray-600">
-        <a href="#" className="hover:text-blue-500 transition-colors duration-200">
+      <h3 className="team-member-name">{name}</h3>
+      <p className="team-member-position">{position}</p>
+      <div className="team-member-social">
+        <a href="#" className="social-link twitter">
           <FaTwitter />
         </a>
-        <a href="#" className="hover:text-blue-700 transition-colors duration-200">
+        <a href="#" className="social-link linkedin">
           <FaLinkedin />
         </a>
-        <a href="#" className="hover:text-gray-800 transition-colors duration-200">
+        <a href="#" className="social-link github">
           <FaGithub />
         </a>
       </div>

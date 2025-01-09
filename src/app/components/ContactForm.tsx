@@ -14,14 +14,11 @@ export default function ContactForm() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="space-y-4 max-w-md mx-auto p-5 border rounded shadow-lg"
-    >
+    <form onSubmit={handleSubmit} className="contact-form">
       <input
         type="text"
         placeholder="Name"
-        className="w-full p-3 border rounded"
+        className="contact-input"
         value={formData.name}
         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         required
@@ -29,22 +26,19 @@ export default function ContactForm() {
       <input
         type="email"
         placeholder="Email"
-        className="w-full p-3 border rounded"
+        className="contact-input"
         value={formData.email}
         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         required
       />
       <textarea
         placeholder="Message"
-        className="w-full p-3 border rounded"
+        className="contact-textarea"
         value={formData.message}
         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
         required
       ></textarea>
-      <button
-        type="submit"
-        className="w-full p-3 bg-blue-600 text-white rounded"
-      >
+      <button type="submit" className="contact-button">
         Send Message
       </button>
     </form>
